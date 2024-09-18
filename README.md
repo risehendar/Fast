@@ -1,6 +1,6 @@
 # FAST : Rapid Prototyping Framework for Cybersecurity Applications on Heterogeneous Computing
 
-The Rapid Prototyping Framework for developing cybersecurity applications using FPGA-based heterogeneous computing systems. This framework provides an easy-to-use platform for building and testing secure systems that integrate hardware and software components.
+Welcome to the repository for the Rapid Prototyping Framework for Cybersecurity Applications using FPGAs. This project focuses on providing tools, templates, and workflows to accelerate the development of secure applications in FPGA-based heterogeneous computing environments. Fast Framework is designed for developing cybersecurity applications using FPGA-based heterogeneous computing systems. This framework provides an easy-to-use platform for building and testing secure systems that integrate hardware and software components.
 
 ## Table of Contents
 - [Overview](#overview)
