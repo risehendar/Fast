@@ -1,6 +1,6 @@
 # Rapid Prototyping Framework for Cybersecurity Applications on Heterogeneous Computing with FPGA
 
-Welcome to the Rapid Prototyping Framework for developing cybersecurity applications using FPGA-based heterogeneous computing systems. This framework provides an easy-to-use platform for building and testing secure systems that integrate hardware and software components.
+The Rapid Prototyping Framework for developing cybersecurity applications using FPGA-based heterogeneous computing systems. This framework provides an easy-to-use platform for building and testing secure systems that integrate hardware and software components.
 
 ## Table of Contents
 - [Overview](#overview)
