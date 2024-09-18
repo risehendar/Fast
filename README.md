@@ -19,12 +19,14 @@ The Rapid Prototyping Framework for developing cybersecurity applications using 
 This framework aims to accelerate the development of cybersecurity applications on heterogeneous computing platforms with FPGA acceleration. The focus is on resource-constrained environments, such as IoT devices, and systems requiring secure cryptographic operations, memory protection, and real-time security defenses.
 
 ## Features
-- Pre-built cryptographic IP cores (AES, RSA, SHA).
-- FPGA-CPU hybrid design templates.
+
+- **Pre-built cryptographic IP cores** for common cryptographic algorithms (AES, RSA, SHA).
+- **FPGA-CPU** hybrid design templates.
+- **Rapid prototyping tools to** accelerate secure design iteration.
 - **RISC-V** and **Physical Memory Protection (PMP)** support for secure execution.
-- Modular structure for easy customization and extension.
-- Built-in unit testing and simulation environments.
-- Support for **Trusted Execution Environments (TEE)**.
+- **Modular structure** for easy customization and extension.
+- Built-in unit testing and simulation environments for threat modeling and security validation.
+
 
 ## Getting Started
 
@@ -39,6 +41,7 @@ Ensure you have the following tools and libraries installed:
 - CMake and GCC toolchain (for CPU modules)
 
 ### Platforms Supported:
+
 - TUL PYNQ-Z2
 - Zynq UltraScale+
 - Intel Cyclone V
@@ -53,8 +56,6 @@ To set up the framework, follow these steps:
 ```bash
 git clone https://github.com/yourusername/yourrepository.git
 ```
-
-
 
 ### Navigate into the project directory:
 ```bash
@@ -71,7 +72,7 @@ pip install -r requirements.txt
 source /opt/Xilinx/Vivado/2022.1/settings64.sh
 ```
 
-### Framework Structure
+## Framework Structure
 ```bash
 .
 ├── docs/                # Documentation and guides
@@ -86,7 +87,7 @@ source /opt/Xilinx/Vivado/2022.1/settings64.sh
 
 ```
 
-### Usage
+## Usage
 Example Workflow
 
 **Step 1: Build the FPGA design**
@@ -127,7 +128,7 @@ load_encryption_key(fpga);
 encrypt_data(fpga, plaintext, ciphertext);
 ```
 
-### Supported Platforms
+## Supported Platforms
 The following platforms have been tested:
    - TUL PYNQ-Z2 (RISC-V PMP protection)
    - Zynq UltraScale+
@@ -135,10 +136,10 @@ The following platforms have been tested:
    - Alveo U200
 
 
-### Contributing
+## Contributing
 We welcome contributions from the community! Please review our Contributing Guide for more details on how to get started. Feel free to open issues or submit pull requests.
 
-### License
+## License
 This project is licensed under **the MIT License** - see the LICENSE file for details.
 
 ### Contact
