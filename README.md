@@ -44,7 +44,7 @@ Ensure you have the following tools and libraries installed:
 
 - TUL PYNQ-Z2
 - Zynq UltraScale+
-- Intel Cyclone V
+- Ultra-96 v1 and Ultra96 v2
 - Alveo U200
 
 ## Installation
@@ -54,12 +54,12 @@ To set up the framework, follow these steps:
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/risehendar/Fast/Fast.git
 ```
 
 ### Navigate into the project directory:
 ```bash
-cd yourrepository
+cd Fast
 ```
 
 ### Install the required Python packages:
@@ -132,7 +132,7 @@ encrypt_data(fpga, plaintext, ciphertext);
 The following platforms have been tested:
    - TUL PYNQ-Z2 (RISC-V PMP protection)
    - Zynq UltraScale+
-   - Intel Cyclone V
+   - Ultra-96 v1 and Ultra96 v2
    - Alveo U200
 
 
@@ -142,5 +142,33 @@ We welcome contributions from the community! Please review our Contributing Guid
 ## License
 This project is licensed under **the MIT License** - see the LICENSE file for details.
 
-### Contact
+## Contact
 Hendarmawan ([Email](hendar.rise@gmail.com)).
+
+
+## TO ADD
+- Makefile: HLS IP, SYNTHESIS, VALIDATION, SHELL, Upload and program FPGA
+- HW Specs
+- config files
+- ipynb Jupyter Notebook + Python
+- TCL auto build apps
+- Fast toolkits
+- Auto compiler for re
+- Bitstream, hwh, tcl for PYNQ
+- HLS exploits: decoder, encoder, exploits, DMA-Memory interconnect, streaming data FIFO
+- Example
+- Tutorial
+
+## Tutorial
+- Copy `requirements.txt` from this repo onto the Pynq board, for example using SCP:
+
+    ```scp requirements.txt xilinx@192.168.2.99:/home/xilinx```
+
+    Installing the Bnn-Pynq requires the BOARD env variable to be set. SSH into the Pynq board and run as sudo:
+
+    ```shell
+    echo export BOARD=Pynq-Z2 >> /root/.bashrc && source /root/.bashrc
+    sudo pip3 install -r requirements.txt
+    ```
+
+- Note that if you are connecting more than 1 Pynq boards, each of them will have to be assigned a unique IP address. This can be done by modifying the default value `192.168.2.99` to something else (`192.168.2.100` etc.) in `/etc/network/interfaces.d/eth0`
